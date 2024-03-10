@@ -1,0 +1,23 @@
+@use "../../styles/partials//mixins" as *;
+@use "../../styles/partials/variables" as *;
+@use "../../styles//partials/colors" as *;
+@use "../../styles/partials/paddings" as *;
+
+body {
+    margin: 0;
+    background: #000000;
+    font-family: roboto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  code {
+    font-family: 'Courier New',
+      monospace;
+  }
+  
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
