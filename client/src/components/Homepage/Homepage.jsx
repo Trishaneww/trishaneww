@@ -1,6 +1,4 @@
-import { useState, useEffect } from "react";
 import { FaArrowRightLong } from "react-icons/fa6";
-import Navbar from "../Navbar/Navbar";
 import "./Homepage.scss";
 
 const Homepage = () => {

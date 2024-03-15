@@ -4,17 +4,16 @@ import { HiMiniRectangleStack } from "react-icons/hi2";
 import { IoIosAdd } from "react-icons/io";
 import { FiLogOut } from "react-icons/fi";
 import { IoIosArrowDown } from "react-icons/io";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import React, { useState, useEffect, useRef } from "react";
 import { GiTreeBeehive } from "react-icons/gi";
 import { MdOutlineHive } from "react-icons/md";
-import { BsCardText } from "react-icons/bs";
 import { FaRegStar } from "react-icons/fa";
 import { CSSTransition } from "react-transition-group";
 import { VscGraphLine } from "react-icons/vsc";
 import Logo from "../../images/logo.png";
 import "./Navbar.scss";
-import axios from "axios";
+
 
 function Navbar() {
   
