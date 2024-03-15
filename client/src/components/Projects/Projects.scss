@@ -1,0 +1,126 @@
+@use "../../styles/partials//mixins" as *;
+@use "../../styles/partials/variables" as *;
+@use "../../styles//partials/colors" as *;
+@use "../../styles/partials/paddings" as *;
+
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    margin:0;
+    overflow-x: hidden;
+    background-color: #2B2B33;
+}
+
+.logo {
+    height: 800px;
+    width: 1330px;
+    border-bottom-left-radius: 6%;
+    border-bottom-right-radius: 6%;
+}
+
+.project-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    margin: 0 13% 0 13%;
+
+    &__title {
+        font-size: 40px;
+        width: 260px;
+        color:rgb(255, 195, 250);
+    }
+
+    &__divider {
+        background-color: white;
+        height:2px;
+    }
+}
+
+
+.information-container {
+    display: flex;
+    justify-content: space-between;
+
+    &__stats {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        width: 100%;
+
+        &-stat {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        &-title {
+            display: flex;
+            width: 200px;
+            font-size: 22px;
+            font-weight: 600;
+            color:rgb(255, 195, 250);
+            transition: 200ms;
+
+            &:hover {
+                display: inline-block;
+                transform: scaleX(1.5);
+                transform-origin: 0 0;
+            }
+        }
+    }
+
+    &__descr {
+        display:flex;
+        flex-direction: column;
+        width: 100%;
+
+        & p {
+            font-size: 17px;
+            text-align: left;
+            line-height: 1.5;
+        }
+    }     
+}
+
+.project-gallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2% 0 2% 0;
+
+    &__title {
+        font-size: 20px;
+        font-weight: 600;
+
+    }
+
+    & img {
+        width: 100%;
+        margin: 0.5% 0 0.5% 0;
+    }
+}
+
+
+    a {
+        line-height: 2;
+        text-decoration: none;
+        color: white;
+        background: 
+            linear-gradient(to right, rgba(110, 249, 249, 0), rgba(100, 200, 200, 0)),
+            linear-gradient(to right, rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255));
+        background-size: 100% 0.1em, 0 0.1em;
+        background-position: 100% 100%, 0 100%;
+        background-repeat: no-repeat;
+        transition: background-size 300ms;
+        width: 220px;
+    }
+  
+a:hover, a:focus {
+    cursor: pointer;
+    background-size: 0 0.1em, 100% 0.1em;
+}
+
